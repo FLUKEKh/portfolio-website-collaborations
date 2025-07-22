@@ -55,7 +55,6 @@ contactForm.addEventListener('submit', (e) => {
     }
 });
 
-<<<<<<< HEAD
 // Project Filter System
 const filterButtons = document.querySelectorAll('.filter-btn');
 const projectCards = document.querySelectorAll('.project-card');
@@ -132,7 +131,7 @@ backToTopButton.addEventListener('click', () => {
         top: 0,
         behavior: 'smooth'
     });
-=======
+});
 // Dark Mode Toggle
 const themeToggle = document.getElementById('theme-icon');
 const currentTheme = localStorage.getItem('theme') || 'light';
@@ -171,5 +170,4 @@ window.addEventListener('scroll', () => {
     const scrollPercent = (scrollTop / docHeight) * 100;
 
     document.querySelector('.progress-bar').style.width = scrollPercent + '%';
->>>>>>> main
 });
