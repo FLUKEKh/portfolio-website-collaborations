@@ -4,10 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< HEAD
+    <title>Your Name - Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+=======
     <title>FLUKE/VOLT - Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
+>>>>>>> main
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 
@@ -51,9 +57,18 @@
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-content">
+<<<<<<< HEAD
+            <h1>Hello, I'm <span class="highlight">Your Name</span></h1>
+            <h1>Hello, I'm <span class="highlight">Your Name</span></h1>
+                <p class="hero-subtitle">
+                    <span id="typing-text"></span>
+                    <span class="cursor">|</span>
+                </p>
+=======
             <h1>Hello, I'm <span class="highlight">FLUKE/VOLT</span></h1>
             <p class="hero-subtitle">Full Stack Developer</p>
             <p class="hero-description">I create beautiful and functional web applications</p>
+>>>>>>> main
             <div class="hero-buttons">
                 <a href="#projects" class="btn btn-primary">View My Work</a>
                 <a href="#contact" class="btn btn-secondary">Get In Touch</a>
@@ -138,8 +153,16 @@
     <section id="projects" class="projects">
         <div class="container">
             <h2 class="section-title">My Projects</h2>
+            <!--Fillter Buttons-->
+            <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="web">Web Apps</button>
+            <button class="filter-btn" data-filter="mobile">Mobile</button>
+            <button class="filter-btn" data-filter="ui">UI/UX</button>
+        </div>
+
             <div class="projects-grid">
-                <div class="project-card">
+                <div class="project-card" data-category="web">
                     <img src="images/project1.jpg" alt="Project 1">
                     <div class="project-info">
                         <h3>E-commerce Website</h3>
@@ -150,7 +173,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="project-card">
+                <div class="project-card" data-category="mobile">
                     <img src="images/project2.jpg" alt="Project 2">
                     <div class="project-info">
                         <h3>Task Management App</h3>
@@ -161,7 +184,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="project-card">
+                <div class="project-card" data-category="ui">
                     <img src="images/project3.jpg" alt="Project 3">
                     <div class="project-info">
                         <h3>Weather App</h3>
@@ -219,6 +242,9 @@
             </div>
         </div>
     </section>
+    <button class="back-to-top" id="backToTop">
+    <i class="fas fa-arrow-up"></i>
+    </button>
 
     <!-- Footer -->
     <footer class="footer">
